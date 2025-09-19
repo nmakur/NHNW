@@ -1,0 +1,117 @@
+// AvoidCheapDelta.cc
+
+doAvoidCheapDelta() - Executes the Avoid-Cheap-Delta algorithm. CMD: doAvoidCheapDelta.
+
+// AvoidExpensive.cc
+
+doAvoidExpensive() - Executes the Avoid-Expensive algorithm. CMD: doAvoidExpensive.
+
+// BruteForce.cc
+
+doBruteForce() - Executes the Brute-Force algorithm. CMD: doBruteForce.
+
+// CommandPrompt.cc
+
+doCommandPrompt() - Creates a command prompt interface.
+
+// FuncDefs.cc
+
+vector<string> split(string inp, char delim)- Splits the string inp wherever the char delim occurs
+
+void printLabels(vector<int> inp) - Prints the contents of inp along with the corresponding food type
+
+void print(vertex inp) - Prints a vertex
+
+void print(edge inp) - Prints an edge
+
+void print(shipment inp) - Prints a shipment
+
+void printFoodTypes() - Prints the food types
+
+void printDonors() - Prints the donors (vertices[0])
+
+void printBanks() - Prints the banks (vertices[1])
+
+void printEdges() - Prints the edges (edges)
+
+void printShipments() - Prints the shipments (shipments)
+
+bool isIn(vector<string> inp, string check) - Returns whether check is in inp
+
+int getIndex(vector<string> list, string name) - Returns the index of name in list
+
+int getIndex(vector<vertex> list, string name) - Returns the index of the vertex with name name in list
+
+bool compA(edge e1, edge e2) - Sorts edges in ascending cost order
+
+bool compD(edge e1, edge e2) - Sorts edges in descending cost order
+
+bool compND_A(edgeND e1, edgeND e2) - Sorts edges in ascending next-cost order
+
+bool compND_D(edgeND e1, edgeND e2) - Sorts edges in descending next-cost order
+
+void sendFood(shipment inp) - Sends the food allocated by inp
+
+void sendAllFood(edge inp) - Sends all possible food along inp
+
+bool isUsedUp(edge e) - Returns whether there is any food to be shipped along e
+
+bool canRemove(vector<edge>::iterator inp) - Returns whether a full shipment of food is possible without *inp
+
+// Log.cc
+
+void logNote(string text) - Writes text to the log. CMD: logNote text
+
+void clearLog() - Clears the log. CMD: clearLog
+
+void exportLog() - Backs up the log. CMD: exportLog
+
+void logBreak() - Adds a break in the log. CMD: logBreak
+
+void log(vertex inp) - Writes inp to the log
+
+void log(edge inp) - Writes inp to the log
+
+void logFoodTypes() - Writes the food types to the log
+
+void logDonors() - Writes the donors to the log
+
+void logBanks() - Writes the banks to the log
+
+void logEdges() - Writes the edges to the log
+
+void logData() - Writes all input data to the log. CMD: logData
+
+void logShipments() - Writes shipments to the log. CMD: logShipments
+
+void logShipments(string titleText) - Writes titleText to the log followed by shipments.
+
+// SetData.cc
+
+void getDataFrom(string prefix) - Imports the data from the files marked with prefix. CMD: getDataFrom prefix
+
+void saveDataTo(string prefix) - Exports the data to files marked with prefix. CMD: saveDataTo prefix
+
+string prettify(int maxNum, int numNum) - Returns a string with integer value equal to numNum, but with leading zeros to give it the same length as maxNum
+
+void doRandomData() - Creates random data. CMD: doRandomData
+
+void upDateFood(vector<vertex>& list, string vertexName, string foodName, int qty) - Sets the vertex in list with name vertexName to have qty of the food of type foodName
+
+void doInput() - Does input. CMD: doInput
+
+void resetFood() - Inputs vertices and costs
+
+// Simulate.cc
+
+string runCostSimul(int num) - Runs num simulations and finds which algorithm has the lowest cost
+
+string runRTSimul(int num) - Runs num simulations and finds which algorithm has the lowest runtime
+
+// TakeCheap.cc
+
+doTakeCheap() - Runs the take-cheap algorithm
+
+// TakeExpensiveDelta.cc
+
+doTakeExpensiveDelta - Runs the take-expensive-delta algorithm
