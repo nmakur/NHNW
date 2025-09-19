@@ -10,3 +10,5 @@ There are 5 deterministic algorithms implemented:
 5. A second-level reverse-greedy algorithm (AvoidCheapDelta) that prioritizes avoiding routes where the next cheapest route is not much more expensive
 
 There are also 2 probabilistic tweaks on the greedy algorithm, that greedily send all possible food along edges as randomly selected according to either a linear (doLinear) or exponentially-scaled (doSoftmax) probability distribution.
+
+The purposes of specific functions are outlined in _Manual.txt.
