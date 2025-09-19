@@ -7,5 +7,6 @@ There are 5 deterministic algorithms implemented:
 2. A greedy algorithm (TakeCheap) that picks the cheapest routes and sends all possible food along them in that order
 3. A reverse-greedy algorithm (AvoidExpensive) that attempts to discard the most expensive routes as long as it is feasible without making food delivery impossible
 4. A second-level greedy algorithm (TakeExpensiveDelta) that prioritizes routes where the next-cheapest route is much more expensive
-5. A second-level reverse-greedy algorithm (AvoidCheapDelta) that prioritizes avoiding routes where the next-cheapest route is not much more expensive
+5. A second-level reverse-greedy algorithm (AvoidCheapDelta) that prioritizes avoiding routes where the next cheapest route is not much more expensive
+
 There are also 2 probabilistic tweaks on the greedy algorithm, that greedily send all possible food along edges as randomly selected according to either a linear (doLinear) or exponentially-scaled (doSoftmax) probability distribution.
