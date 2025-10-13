@@ -12,3 +12,5 @@ There are 5 deterministic algorithms implemented:
 There are also 2 probabilistic tweaks on the greedy algorithm, that greedily send all possible food along edges as randomly selected according to either a linear (doLinear) or exponentially-scaled (doSoftmax) probability distribution.
 
 The purposes of specific functions are outlined in _Manual.txt.
+
+More details about results can be found at https://www.jsr.org/hs/index.php/path/article/view/4297/1900.
